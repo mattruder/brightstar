@@ -3,12 +3,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './brightstarnav.css'
 import Button from 'react-bootstrap/Button';
+import {Link} from 'react-router-dom'
 
 function BrightStarNav({setPage}) {
     return (
        
         <div className='nav-container'>
-        <Button onClick={() => setPage('home')}>Bright Star Spirits</Button>
+        <Link to="/">
+            <Button variant='outline-primary' onClick={() => setPage('home')}>Bright Star Spirits</Button>
+        </Link>
+        
         </div>
      
     )
