@@ -1,7 +1,3 @@
 .full-about {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 90vh;
 }

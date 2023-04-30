@@ -9,10 +9,11 @@ function BrightStarNav({setPage}) {
     return (
        
         <div className='nav-container'>
+        <Navbar sticky="top">
         <Link to="/">
             <Button variant='outline-primary' onClick={() => setPage('home')}>Bright Star Spirits</Button>
         </Link>
-        
+        </Navbar>
         </div>
      
     )

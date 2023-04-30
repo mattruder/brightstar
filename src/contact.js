@@ -13,7 +13,8 @@ function Contact({setPage}) {
     const [formData, updateFormData] = useState(initialFormData);
 
     const formStyles = {
-        padding: '10px'
+        padding: '10px',
+        width: '40vw'
     }
 
     const sendFeedback = (serviceID, templateId, variables) => {

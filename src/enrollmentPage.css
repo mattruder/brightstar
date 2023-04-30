@@ -1,10 +1,9 @@
 .schedule-and-contact-area {
     display: flex;
-    flex-direction: row;
+  
     align-items: center;
     justify-content: space-evenly;
+    width: 100vw;
+    height: 90vh;
 }
 
-.schedule-card {
-    width: 30vw;
-}
