@@ -1,8 +1,25 @@
-.nav-container {
+/* .nav-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100vw;
     padding-bottom: 10px;
+} */
+
+.navStyles {
+    color: #068C6F;
+    background-color: #FBB0F4;
+}
+
+.navButton {
+    background-color: #068C6F;
+    color: #FBB0F4;
+    
+}
+
+.navButton:hover {
+    background-color: #FBB0F4;
+    color: #068C6F;
+    border-color:  #068C6F;
 }

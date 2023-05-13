@@ -3,7 +3,7 @@ import Image from 'react-bootstrap/Image'
 
 function InfoCard({cardTitle, cardText}) {
     return (
-        <Card  style={{ width: '50vw' }}>
+        <Card  style={{ width: '50vw', height: '50vh' }}>
         <Image fluid variant="top"  />
         <Card.Body>
           <Card.Title>{cardTitle}</Card.Title>

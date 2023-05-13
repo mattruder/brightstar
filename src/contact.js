@@ -1,5 +1,6 @@
-import { Form, Col, Button } from 'react-bootstrap';
+import { Form, Col, Button, Container, Row } from 'react-bootstrap';
 import { useState } from 'react'
+import './contact.css'
 
 const initialFormData = Object.freeze({
     username: "",
@@ -13,9 +14,17 @@ function Contact({setPage}) {
     const [formData, updateFormData] = useState(initialFormData);
 
     const formStyles = {
-        padding: '10px',
-        width: '40vw'
+     
+        
+        
+        
+        alignItems: 'center',
+        justifyContent: 'center'
     }
+
+  
+
+
 
     const sendFeedback = (serviceID, templateId, variables) => {
         window.emailjs.send(
@@ -38,8 +47,8 @@ function Contact({setPage}) {
     const handleSubmit = (e) => {
         e.preventDefault()
         
-        const templateId = 'template_czrlb1i';
-        const serviceID = "service_w8tlljd";
+        const templateId = 'template_3irx4km';
+        const serviceID = "service_bpdmgcd";
         if (formData.name && formData.mobile && formData.email && formData.query) {
             sendFeedback(serviceID, templateId, { from_name: formData.name, mobile: formData.mobile, message: formData.query, email: formData.email })
             alert(`Thank you for your message. Your query has been forwarded.`);
@@ -53,35 +62,44 @@ function Contact({setPage}) {
       };
 
   return (
-    <div className='transparentBG cardPaddingBtm cardPaddingTop'>
-        <div style={formStyles} className="d-flex align-items-center justify-content-center">
+    <div  className=' formFormat align-items-center justify-content-center'>
+        <div style={formStyles} >
         <h3>Register</h3>
         </div>
-    <Form style={formStyles}>
+        <Container fluid >
+            <Row>
+                <Col>
+                <Form >
+        <div>
             <Form.Group hasValidation as={Col} controlId="formGridName">
                 <Form.Label>Name*</Form.Label>
-                <Form.Control required onChange= {handleChange} name="name" type="name" placeholder="Name" />
+                <Form.Control required onChange={handleChange} name="name" type="name" placeholder="Name" />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Email*</Form.Label>
-                <Form.Control required onChange= {handleChange} name="email" type="email" placeholder="Enter email"
+                <Form.Control required onChange={handleChange} name="email" type="email" placeholder="Enter email"
                 />
             </Form.Group>
             <Form.Group as={Col} controlId="formGridMobile">
                 <Form.Label>Mobile no.*</Form.Label>
-                <Form.Control required onChange= {handleChange} name="mobile" placeholder="Phone" />
+                <Form.Control required onChange={handleChange} name="mobile" placeholder="Phone" />
             </Form.Group>
             <Form.Group as={Col} id="formGridQuery">
-                <Form.Label>Query*</Form.Label>
-                <Form.Control required onChange= {handleChange} name="query" as="textarea" rows={8} />
+                <Form.Label>Information*</Form.Label>
+                <Form.Control required onChange={handleChange} name="query" placeholder="Please include name and age of all children, as well as what dates you would like to sign up for" as="textarea" rows={8} />
             </Form.Group>
-    <div style={formStyles} className="d-flex align-items-center justify-content-center">
-            <Button onClick={handleSubmit} variant="primary" type="submit">
+    <div  className="d-flex align-items-center justify-content-center">
+            <Button onClick={handleSubmit} variant="outline" className="formButtonStyle" type="submit">
                 Submit
                 </Button>
                 </div>
+                </div>
         </Form >
+                </Col>
+            </Row>
+    
+        </Container>
         </div>
   );
 }

@@ -1,0 +1,19 @@
+ul {
+    list-style-type: none;
+}
+
+.transparentBG {
+    background-color: aqua;
+
+background-color: rgba(0, 0, 0, .50);
+
+color: white;
+
+
+
+}
+
+.scheduleWidth {
+    width: 90vw;
+    padding: 10px;
+}

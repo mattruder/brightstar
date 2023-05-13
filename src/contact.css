@@ -1,0 +1,26 @@
+.formPOS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formFormat {
+    background-color: white;
+    width: 100vw;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.formButtonStyle {
+    background-color: #068C6F;
+    color: #FBB0F4;
+    width: 20vw;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.formButtonStyle:hover {
+    background-color: #FBB0F4;
+    color: #068C6F;
+    border-color:  #068C6F;
+}

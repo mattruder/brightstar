@@ -1,9 +1,41 @@
 .schedule-and-contact-area {
     display: flex;
-  
+    padding-top: 100px;
     align-items: center;
     justify-content: space-evenly;
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
 }
 
+.transparentBG {
+    background-color: aqua;
+
+background-color: rgba(0, 0, 0, .50);
+
+color: white;
+
+
+
+}
+
+.contactStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.order {
+    display: 'flex';
+    flex-direction: column;
+}
+
+.nav {
+    height: '10vh';
+}
+
+.enrollmentContainer {
+    width: 100vw;
+}
