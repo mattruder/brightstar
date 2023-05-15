@@ -21,6 +21,16 @@
 }
 
 .homeImage {
-    width: 50vw;
+    width: 75vw;
     height: auto
+}
+
+@media only screen and (max-width: 576px) {
+    .home-nav-btn {
+        width: 50vw;
+    }
+
+    .homeImage {
+        width: 100vw;
+    }
 }

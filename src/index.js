@@ -9,12 +9,15 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ThemeProvider from 'react-bootstrap/ThemeProvider'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <ThemeProvider>
     <App />
+    </ThemeProvider>
     </Router>
   </React.StrictMode>
 );

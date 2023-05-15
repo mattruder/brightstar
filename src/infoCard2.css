@@ -1,0 +1,10 @@
+.infoCard2Style {
+    width: 50vw;
+    height: 50vh
+}
+
+@media only screen and (max-width: 576px) {
+    .infoCard2Style {
+        width: 100vw
+    }
+}

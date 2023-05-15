@@ -28,8 +28,8 @@ function Home({setPage}) {
             
         
         </Row>
-            <Row  className="d-flex flex-wrap justify-content-center align-items-center">
-            <Col  className="d-flex justify-content-center align-items-center" >
+            <Row md={2} sm={2} xs={1} className="d-flex flex-wrap justify-content-center align-items-center">
+            <Col className="d-flex justify-content-center align-items-center" >
             <Link to="/about">
                 <Button className='home-nav-btn' variant="outline" onClick={() => setPage('about')}>about us / mission statement</Button>
             </Link>

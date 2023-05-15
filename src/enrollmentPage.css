@@ -25,7 +25,10 @@ color: white;
     width: 100%;
 }
 
-
+.enrollmentInfo {
+    width: 50vw;
+    height: 50vh;
+}
 
 .order {
     display: 'flex';
@@ -38,4 +41,10 @@ color: white;
 
 .enrollmentContainer {
     width: 100vw;
+}
+
+@media only screen and (max-width: 576px) {
+    .enrollmentContainer {
+        width: 100vw
+    }
 }
