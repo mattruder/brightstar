@@ -1,6 +1,8 @@
 import { Form, Col, Button, Container, Row } from 'react-bootstrap';
 import { useState } from 'react'
 import './contact.css'
+import emailjs from '@emailjs/browser';
+
 
 const initialFormData = Object.freeze({
     username: "",
@@ -26,10 +28,10 @@ function Contact({setPage}) {
 
 
 
-    const sendFeedback = (serviceID, templateId, variables) => {
-        window.emailjs.send(
+    const sendFeedback = (serviceID, templateId, variables, publicKey) => {
+        emailjs.send(
             serviceID, templateId,
-            variables
+            variables, publicKey
         ).then(res => {
             console.log('Email successfully sent!')
         })
@@ -49,8 +51,9 @@ function Contact({setPage}) {
         
         const templateId = 'template_3irx4km';
         const serviceID = "service_bpdmgcd";
+        const publicKey = "viC7jQKxx99O3NagW";
         if (formData.name && formData.mobile && formData.email && formData.query) {
-            sendFeedback(serviceID, templateId, { from_name: formData.name, mobile: formData.mobile, message: formData.query, email: formData.email })
+            sendFeedback(serviceID, templateId, { from_name: formData.name, mobile: formData.mobile, message: formData.query, email: formData.email }, publicKey)
             alert(`Thank you for your message. Your query has been forwarded.`);
             setPage('home')
         } else {

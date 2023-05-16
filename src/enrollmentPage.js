@@ -36,7 +36,7 @@ function EnrollmentPage({setPage}) {
             </Row>
             <br></br>
             <Row className='d-flex flex-wrap align-items-center'>
-                <Col md className="d-flex justify-content-center align-items-center "><Contact /></Col>
+                <Col md className="d-flex justify-content-center align-items-center "><Contact setPage={setPage}/></Col>
             </Row>
             <br></br>
             <br></br>

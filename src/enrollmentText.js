@@ -1,7 +1,8 @@
 export default function EnrollmentText() {
     return (
         <div>
-          <p>We will have 15 sessions operating on Tuesdays & Thursdays @ 9:30 am -2:30 pm 
+            <h5><b>Summer Season ☀️</b> </h5>
+          <p>We will have 15 sessions operating on Tuesdays & Thursdays @ 10:00 am -2:30 pm 
                 from June 13 - August 10.</p>
                 <div>
             

@@ -1,5 +1,11 @@
+.infoCard1Style {
+    width: 100vw;
+    height: auto
+}
+
 @media only screen and (max-width: 576px) {
-    .enrollmentInfo {
-        width: 100vw
+    .infoCard1Style {
+        width: 100vw;
+        height: auto;
     }
 }

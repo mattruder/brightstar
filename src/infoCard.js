@@ -1,9 +1,10 @@
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image'
+import './infoCard.css'
 
-function InfoCard({cardTitle, cardText, cardStyle}) {
+function InfoCard({cardTitle, cardText}) {
     return (
-        <Card style={cardStyle}>
+        <Card className="infoCard1Style">
         <Image fluid variant="top"  />
         <Card.Body>
           <Card.Title>{cardTitle}</Card.Title>
