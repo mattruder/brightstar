@@ -2,7 +2,7 @@
   "name": "brightstar",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mattruder.github.io/brightstar/",
+  "homepage": ".",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -20,9 +20,9 @@
   },
   "engines": {
     "node": "17.2.0"
-  }
+  },
   "scripts": {
-     "build:digitalOcean": "yarn install --production=false && rimraf dist && yarn build && yarn install --production --frozen-lockfile",
+      "build:digitalocean": "npm install --production=false && npm run build && npm ci",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
