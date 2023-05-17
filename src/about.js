@@ -25,7 +25,10 @@ function About({setPage}) {
             cardText={<AboutText />}
             
             />
+           
                 </Col>
+                <br></br>
+                <br></br>
                 <Col md className="d-flex justify-content-center align-items-center">
                 <InfoCard2
             cardTitle={<b>Vision Statement</b>}

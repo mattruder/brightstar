@@ -1,9 +1,45 @@
 .infoCard2Style {
     width: 50vw;
-    height: auto;
+    height: 50vh;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1380px) and (max-height: 560px) {
+    .infoCard2Style {
+        width: 50vw;
+        height: 75vh;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 600px) {
+    .infoCard2Style {
+        width: 50vw;
+        height: 80vh;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 937px) and (max-height: 523px) {
+    .infoCard2Style {
+        width: 50vw;
+        height: 90vh;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 913px) and (max-height: 1000px) {
+    .infoCard2Style {
+        width: 50vw;
+        height: 75vh;
+        padding-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
     .infoCard2Style {
         width: 100vw;
         height: auto;
