@@ -56,7 +56,8 @@ function Contact({setPage}) {
         if (formData.name && formData.mobile && formData.email && formData.query) {
             sendFeedback(serviceID, templateId, { from_name: formData.name, mobile: formData.mobile, message: formData.query, email: formData.email }, publicKey)
             alert(`Thank you for your message. Your query has been forwarded.`);
-            navigate("/")
+            navigate("/");
+            setPage('home')
         } else {
             alert(`Please complete all fields`);
         }
