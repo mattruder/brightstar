@@ -9,7 +9,7 @@ import background from "./images/background-brightstar.png"
 import banner from './images/banner-brighstar.png'
 import BrightStarNav from './brightstarnav';
 
-import { Route, Routes, Link, NavLink } from 'react-router-dom';
+import { Route, Routes, Link, NavLink, useNavigate } from 'react-router-dom';
 
 
 function App() {
@@ -29,7 +29,10 @@ function App() {
     window.scrollTo(0, 0)
   }
   
+  const navigate = useNavigate()
+  
   window.onload = (e) => {
+    navigate('/')
     setPage('home')
   }
 
