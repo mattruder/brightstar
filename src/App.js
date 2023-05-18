@@ -28,6 +28,10 @@ function App() {
   if (page) {
     window.scrollTo(0, 0)
   }
+  
+  window.onload = (e) => {
+    setPage('home')
+  }
 
   const bannerStyles= {
     display: 'flex',
