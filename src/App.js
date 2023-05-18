@@ -29,12 +29,12 @@ function App() {
     window.scrollTo(0, 0)
   }
   
-  const navigate = useNavigate()
+//   const navigate = useNavigate()
   
-  window.onload = (e) => {
-    navigate('/')
-    setPage('home')
-  }
+//   window.onload = (e) => {
+//     navigate('/')
+//     setPage('home')
+//   }
 
   const bannerStyles= {
     display: 'flex',
