@@ -19,21 +19,28 @@ function EnrollmentPage({setPage}) {
         <div className="enrollmentContainer">
         <Container fluid className='full-about enrollmentContainer'>
             <Row xs={1} s={1} md={2} className='d-flex flex-wrap align-items-center'>
-                <Col md className="d-flex justify-content-center align-items-center ">
+                <Col md className="d-flex justify-content-center align-items-center addSpace ">
                 <InfoCard2 
-            cardTitle={<b>Summer Schedule</b>}
+            cardTitle={<b>Summer Season ☀️ </b>}
             cardText={<ScheduleText />}
             
             />
                 </Col>
+                <br>
+            </br>
+            <br></br>
+            <br></br>
                 <Col md className="d-flex justify-content-center align-items-center">
                 <InfoCard2
-            cardTitle={<b>Enrollment/Tuition Info</b>}
+            cardTitle={<b>Enrollment & Tuition Information</b>}
             cardText={<EnrollmentText />}
             
             />
                 </Col>
             </Row>
+            <br>
+            </br>
+            <br></br>
             <br></br>
             <Row className='d-flex flex-wrap align-items-center'>
                 <Col md className="d-flex justify-content-center align-items-center "><Contact setPage={setPage}/></Col>
