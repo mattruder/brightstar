@@ -2,6 +2,7 @@ import { Form, Col, Button, Container, Row } from 'react-bootstrap';
 import { useState } from 'react'
 import './contact.css'
 import emailjs from '@emailjs/browser';
+import { useNavigate } from "react-router-dom"
 
 
 const initialFormData = Object.freeze({
@@ -25,7 +26,7 @@ function Contact({setPage}) {
     }
 
   
-
+    const navigate = useNavigate()
 
 
     const sendFeedback = (serviceID, templateId, variables, publicKey) => {
@@ -55,7 +56,7 @@ function Contact({setPage}) {
         if (formData.name && formData.mobile && formData.email && formData.query) {
             sendFeedback(serviceID, templateId, { from_name: formData.name, mobile: formData.mobile, message: formData.query, email: formData.email }, publicKey)
             alert(`Thank you for your message. Your query has been forwarded.`);
-            setPage('home')
+            navigate("/")
         } else {
             alert(`Please complete all fields`);
         }
