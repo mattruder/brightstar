@@ -11,7 +11,35 @@ import VisionText from './visionText.js'
 import MindfulnessText from './mindfulnessText.js'
 import footer from './images/footer-brightstar.PNG'
 import Image from 'react-bootstrap/Image'
+import {useState, useEffect, useRef} from 'react'
 function About({setPage}) {
+
+    // const [boxHeight, setBoxHeight] = useState(0)
+    // const ref = useRef(null)
+
+    // const initialBoxHeight = {
+    //     width: '50vw',
+    //     height: 'auto'
+    // }
+
+    // const newBoxHeight = {
+    //     height: `${boxHeight}`
+    // }
+
+    // function getBoxHeight(heightVariable) {
+    //     return (
+    //         heightVariable.height
+    //     )
+    // }
+
+    // useEffect(() => {
+    //     setBoxHeight(initialBoxHeight.height)
+    // } )
+
+    // console.log("initlaboxheightvalue", initialBoxHeight.height.valueOf())
+    // console.log("newboxheight", newBoxHeight.height.value)
+    // console.log("initialboxheight", initialBoxHeight.height.value)
+    // console.log("newHeight", getBoxHeight(initialBoxHeight))
 
     
 
@@ -20,9 +48,15 @@ function About({setPage}) {
         
         <Container fluid className='full-about'>
         <Row xs={1} s={1} md={1}>
-            <Col md className="d-flex justify-content-center align-items-center">
-            <InfoCard 
-            cardTitle={<h4><b>Bienvenida familias! Welcome to our Bright Star Spirits - Kids Collective  🌟 </b></h4>}
+            <Col md className="d-flex justify-content-center text-align-center align-items-center">
+            <InfoCard
+             
+            cardTitle={<div className="centerText"><b>Bienvenida familias!</b> 
+            <br></br>
+        <b>Welcome to our Bright Star Spirits</b> 
+        <br></br>
+        <b>Kids Collective  🌟</b>
+            </div> }
             cardText={<AboutText />}
             
             />
@@ -34,6 +68,7 @@ function About({setPage}) {
             <Row xs={1} s={1} md={2} className='d-flex flex-wrap align-items-center'>
                 <Col md className="d-flex justify-content-center align-items-center addSpace">
                 <InfoCard3
+            // style={newBoxHeight}
             cardTitle={<b>Practicing Mindfulness</b>}
             cardText={<MindfulnessText />}
             
@@ -42,12 +77,16 @@ function About({setPage}) {
                 </Col>
                 <br></br>
                 <br></br>
-                <Col md className="d-flex justify-content-center align-items-center">
+                <Col md className="initialBoxHeight d-flex justify-content-center align-items-center">
+                    
                 <InfoCard3
+                
+            // style={initialBoxHeight}
             cardTitle={<b>Vision Statement</b>}
             cardText={<VisionText />}
             
             />
+            
                 </Col>
             </Row>
             <br></br>

@@ -1,6 +1,22 @@
 .infoCard3Style {
     width: 50vw;
-    height: 50vh;
+    height: 50vh
+}
+
+@media only screen and (max-width: 1151px)  {
+    .infoCard3Style {
+        width: 50vw;
+        height: 90vh;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 942px) and (max-height: 807px) {
+    .infoCard3Style {
+        width: 50vw;
+        height: 90vh;
+        padding-bottom: 10px;
+    }
 }
 
 @media only screen and (max-width: 1380px) and (max-height: 560px) {
