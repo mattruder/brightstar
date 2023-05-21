@@ -12,10 +12,16 @@ import BrightStarNav from './brightstarnav';
 import { Route, Routes, Link, NavLink, useNavigate } from 'react-router-dom';
 
 
+
+
+
+
+
 function App() {
 
-  
 
+
+ 
   const [page, setPage] = useState('home')
 
   const appStyles = {
@@ -35,6 +41,12 @@ function App() {
     navigate('/')
     setPage('home')
   }
+
+  window.onpopstate = () => {
+    navigate("/");
+    setPage('home')
+  }
+
 
   const bannerStyles= {
     display: 'flex',
