@@ -63,7 +63,7 @@ function About({setPage}) {
             
             </Col>
             </Row>
-            <br></br>
+            {/* <br></br>
             <br></br>
             <Row xs={1} s={1} md={2} className='d-flex flex-wrap align-items-center'>
                 <Col md className="d-flex justify-content-center align-items-center addSpace">
@@ -88,7 +88,7 @@ function About({setPage}) {
             />
             
                 </Col>
-            </Row>
+            </Row> */}
             <br></br>
             <br></br>
            

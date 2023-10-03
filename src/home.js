@@ -29,7 +29,7 @@ function Home({setPage}) {
             </Col>
             <Col  className="d-flex justify-content-center align-items-center" >
             <Link to='/enrollment'>
-                <Button className='home-nav-btn' variant="outline" onClick={() => setPage('enrollment')}>summer schedule / enrollment</Button>
+                <Button className='home-nav-btn' variant="outline" onClick={() => setPage('enrollment')}>fall schedule / enrollment</Button>
             </Link>
             </Col>
             </Row>

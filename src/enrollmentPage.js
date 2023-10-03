@@ -21,7 +21,7 @@ function EnrollmentPage({setPage}) {
             <Row xs={1} s={1} md={2} className='d-flex flex-wrap align-items-center'>
                 <Col md className="d-flex justify-content-center align-items-center addSpace ">
                 <InfoCard2 
-            cardTitle={<b>Summer Season ☀️ </b>}
+            cardTitle={<b>Autumn Little Artists Series 🍁 🎨 </b>}
             cardText={<ScheduleText />}
             
             />
